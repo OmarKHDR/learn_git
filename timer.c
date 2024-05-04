@@ -1,38 +1,26 @@
 #include<stdio.h>
 #include<time.h>
 
-void delay(int second);
-
+#include<C:\Users\omark\Documents\learn-git\learn_git\func.c>
 
 int main ()
 {
-    int num =2;
+    int num =1;char c;
     //scanf("%d",&num);
     printf("hacking nasa: \n");
-    for(int i=0;i<10;i++)
+    for(int i=0;i<4;i++)
     {
+        printf("phase :[%d]\n",i);
+        printline(19);
         for(int j=0;j<20;j++)
         {
             delay(num);
-            printf("#");
+            print(j);
             
         }
         printf("\n");
     }
-
-}
-
-
-void delay(int second)
-{
-    if(second >300 )
-    {
-        printf("thats too much time!");
-        return;
-    }
-    unsigned long long int mili=second*1000;
-    clock_t time=clock();
-    while(clock()<time+mili)
-    {}
-    return;
+    printf("hacked saccessfully!\nPress any key");
+    c=getchar();
+    return 0;
 }
