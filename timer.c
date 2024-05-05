@@ -1,6 +1,6 @@
 #include<stdio.h>
 #include<time.h>
-
+#include <windows.h>
 #include<C:\Users\omark\Documents\learn-git\learn_git\func.c>
 
 int main ()
@@ -20,6 +20,7 @@ int main ()
         }
         printf("\n");
     }
+    system("color 0A");
     printf("hacked saccessfully!\nPress any key");
     c=getchar();
     return 0;
