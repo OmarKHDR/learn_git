@@ -22,17 +22,22 @@ int print (int n)
     }
     return 0;
 }
-void delay(int second)
+int delay(int second,int speed)
 {
-    if(second >300 )
+    if(second >120 || speed == 0 )
     {
-        printf("that will take forever!\ngoodby");
-        return;
+        printf("that will take forever!\n");
+        return 1;
     }
-    unsigned long long int mili=second*1000;
+    else if(speed >10)
+    {
+        printf("slowdown man!!\n");
+        return 1;
+    }
+    unsigned long long int mili=(second*1000)/speed;
     clock_t time=clock();
     while(clock()<time+mili)
     {}
-    return;
+    return 0;
 }
 
