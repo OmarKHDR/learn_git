@@ -1,7 +1,7 @@
 #include<stdio.h>
 #include<time.h>
 #include<windows.h>
-#include<C:\Users\omark\Documents\learn-git\learn_git\func.c>
+#include "func.c"
 
 int main ()
 {
